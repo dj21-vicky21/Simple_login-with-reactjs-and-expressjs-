@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif !important;
+}
+
+.simpleprojet{
+  width: 100% !important;
+}
+.auth_page_wrap{
+  width: inherit;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background: rgb(255,0,212);
+  background: linear-gradient(36deg, rgba(255,0,212,1) 0%, rgba(0,221,255,1) 100%);
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.login_header{
+  margin-bottom: 5px;
+  font-weight: 600;
+  
+}
+
+.auth_page,.home_wraper{
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: min(100% - 20px , 450px);
+  display: flex;
+  gap: 5px;
+  height: 350px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: rgba(21, 11, 0, 46); */
+  -webkit-box-shadow: 0px 0px 4px 0.5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 4px 0.5px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 4px 0.5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 10px 25px;
+}
+.auth_page.signup_page{
+  height:450px ;
+}
+
+.button_submit{
+  margin-top: 25px;
+  display: flex;
+    justify-content: end;
+}
+.linkroredirect{
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,135px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 10px;
+
+}
+.auth_page a{
+  color: #111;
+  font-weight: 500;
+  cursor: pointer;
+}
+.auth_page a:hover{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: #284387;
+}
+.button_submit a{
+  color: #fff !important;
+}
+.login_btn{
+  text-transform: capitalize !important;
+}
+.signup_form{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.signup_form>div{
+  flex: 1 0 150px;
+}
+.datepicker{
+  width: 100%;
+  margin-top: 10px;
+}
+.login_link{
+  transform: translate(-50%,185px);
+}
+.password_container{
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+}
+.password_container>div{
+position: relative;
+width: 100%;
+
+}
+.eye_icon{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.home{
+  width: 100%;
+  overflow: auto;
+  padding: 20px 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home_wraper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home_wraper .logout_btn{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 20%;
+  text-transform: capitalize !important;
+}
+.error_login{
+  font-size: 12px;
+  color: rgb(255, 0, 0);
+}
+.username{
+  font-size: 12px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.admintab{
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: min(100% - 20px , 450px);
+  display: flex;
+  gap: 5px;
+  height: auto;
+  min-height: 450px;
+    max-height: 500px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: rgba(21, 11, 0, 46); */
+  -webkit-box-shadow: 0px 0px 4px 0.5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 4px 0.5px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 4px 0.5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 10px 40px;
+  overflow-y: auto;
+  margin-left: 10px;
+}
+.usercounts{
+  font-size: 14px;
+}
+.userdetails-collapse {
+  margin-top: 10px;
+  padding: 6px 10px;
+
+}
+.alluserlistheading{
+  /* position: sticky; */
+  width: 100%;
+  height: 32px;
+  top: -10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.userlist{
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.alluserdetails{
+  transition: all 0.3s ease-in-out;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.active-userdetail{
+  border: 1px  solid #111;
+}
+
+.button_submit.sign_up{
+  justify-content: space-between;
+}
+.welcomeclass{
+  margin-bottom: 20px;
+}
+
+.admintabheader_tab{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.username_in_tab{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  min-width: 20px;
+  overflow: hidden;
+  max-width: 300px;
+  margin-right: 20px;
+}
+.userdetailpropertyname{
+  /* width: 100%; */
+  min-width: 140px;
+}
+.name_property{
+  width: inherit;
+  display: flex;
+}
+.name_property>span:nth-child(1){
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 180px;
+  min-width: 20px;
+  overflow: hidden;
+  max-width: 300px;
+  margin-right: 20px;
+
+}
+.name_property>span:nth-child(2){
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  min-width: 20px;
+  overflow: hidden;
+  max-width: 260px;
+  margin-right: 20px;
+}
+.home{
+  height: 100vh;
+}
+.homeheader{
+  display: flex;
+  align-items: center;
+}
+
+.homeheader > svg{
+  font-size: 38px;
+}
+.userlist span:nth-child(2){
+  text-transform: capitalize;
+}

@@ -1,0 +1,55 @@
+@media (width<450px) {
+    .auth_page{
+        font-size: 12px;
+       padding: 10px 20px;
+    }
+    .login_header{
+        font-size: 20px;
+    }
+    .signup_form{
+        display: flex;
+        flex-direction: column;
+    }
+    .signup_form>div{
+        flex: 1 1 1px !important;
+    }
+    .auth_page.signup_page{
+        height:500px;
+    }
+    .login_link {
+        transform: translate(-50%,210px);
+    }
+}
+@media (width<360px) {
+    .button_submit{
+        margin-top: 5px;
+    }
+    .login_link {
+        transform: translate(-50%,195px);
+    }
+    
+}
+@media (width < 400px){
+    .auth_page.signup_page{
+        height: 490px;
+    }
+    .linkroredirect.login_link{
+        transform: translate(-50%,210px);
+    }
+}
+
+@media (width<931px) {
+    .home{
+        flex-direction: column;
+    }
+    .admintab{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+}
+
+@media (height < 850px) and (width < 861px){
+   .home{
+    height: auto;
+   }
+}
